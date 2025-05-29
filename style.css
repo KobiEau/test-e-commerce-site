@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero section */
+#hero{
+    height: 100vh;
+    width: 100vw;
+    background: url("./Asset/artem-beliaikin-N35J0N8ZglQ-unsplash.jpg") center/cover no-repeat;
+    position: relative;
+    color: #fff;
+}
+
+#hero-description-container{
+    position: relative;
+    z-index: 1;
+}
+
+
+#hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+#products-container{
+    display: flex;
+    gap: 20px 12px;
+    flex-wrap: wrap;
+    padding: 12px;
+
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.9rem; */
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+    width: 100%;
+    gap: 12px 0;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.product-card h2, .product-card p{
+    text-align: center;
+    max-width: 100%;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+    
+}
+
+.product-card img{
+    height: 150px;
+    width: 100%; 
+    object-fit: contain;
+}
